@@ -4,8 +4,15 @@
 
 \documentclass[10pt]{article}
 %sets margins to be 2 centimeters
-\usepackage[margin=2cm]{geometry}
+\usepackage[
+top    = 1.50cm,
+bottom = 1.00cm,
+left   =  1.50cm,
+right  = 1.50cm]{geometry}
 \usepackage{array,xcolor}
+\setlength{\voffset}{-0.6in} %trim vertical space at the top
+\setlength{\footskip}{-1in}
+
 %customization
 \definecolor{lightgray}{gray}{0.8}
 \newcolumntype{L}{>{\raggedleft}p{0.14\textwidth}}
@@ -48,7 +55,9 @@ Graduate Certificate in Data Mining and Machine Learning.\\
 
 \section*{Experience}
 \begin{tabular}{L!{\VRule}R}
-Summer 2015 & {\textbf{Software Engineer Intern}, \emph{Algorithmia}, Seattle, WA, USA}. \\
+Summer 2015 & {\textbf{Software Engineer Intern}, \emph{Algorithmia}, Seattle, WA, USA}. 
+\newline Researched and implemented state-of-the-art machine learning algorithms and applications.  These include a face recognition system using OpenCV and local binary pattern histograms as well as a word2vec-based distance metric for documents particularly geared to improving recommendation accuracy on corpora whose texts have fewer directly overlapping words.  
+\\
 
 2014-2015 & {\textbf{Teaching Assistant}, \emph{Washington University in St. Louis}, St. Louis, MO, USA}. 
 \newline Held office hours and lab sessions, graded, and answered students' questions for Introduction to Machine Learning (CSE 417A), Multi-Agent Systems (CSE 516A), and Fair Division in Theory and Practice (CSE/Pol Sci 245A).  
