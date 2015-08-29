@@ -10,6 +10,8 @@ bottom = 1.00cm,
 left   =  1.50cm,
 right  = 1.50cm]{geometry}
 \usepackage{array,xcolor}
+\usepackage{enumitem}
+\setitemize{noitemsep,topsep=0pt,parsep=0pt,partopsep=0pt} %no extra line break above or between itemized entries
 \setlength{\voffset}{-0.4in} %trim vertical space at the top
 \setlength{\footskip}{-1in}
 
@@ -45,7 +47,7 @@ GitHub: markheimann
 %Education
 \section*{Education}
 \begin{tabular}{L!{\VRule}R}
-Fall 2015-- & {\textbf{Ph.D., Computer Science}, \emph{University of Michigan}, Ann Arbor, Michigan, USA}.  \\
+2015-- & {\textbf{Ph.D., Computer Science}, \emph{University of Michigan}, Ann Arbor, Michigan, USA}.  \\
 
 2013-2015 & {\textbf{M.S., Computer Science}, \emph{Washington University in St. Louis}, St. Louis, MO, USA}.
 \newline Graduate Certificate in Data Mining and Machine Learning.\\
@@ -56,7 +58,14 @@ Fall 2015-- & {\textbf{Ph.D., Computer Science}, \emph{University of Michigan}, 
 \section*{Experience}
 \begin{tabular}{L!{\VRule}R}
 Summer 2015 & {\textbf{Software Engineer Intern}, \emph{Algorithmia}, Seattle, WA, USA}. 
-\newline Researched and implemented state-of-the-art machine learning algorithms and applications.  These include a face recognition system using OpenCV and local binary pattern histograms as well as a word2vec-based distance metric for documents particularly geared to improving recommendation accuracy on corpora whose texts have fewer directly overlapping words.  Also worked on methods for automated hyperparameter tuning of machine learning algorithms with Bayesian optimization.    
+\newline Researched and operationalized a variety of machine learning algorithms and applications: 
+
+\begin{itemize}[topsep=0pt]%no line break above itemize
+	\item Built a face recognition system using OpenCV and worked with another team member to produce an accompanying web app for it.  
+	\item Implemented techniques from a recent academic paper using the celebrated word2vec word representations to achieve excellent results on k-nearest neighbor document classification. 	
+	\item  Enabled efficient automated hyperparameter tuning of machine learning algorithms with Bayesian optimization and showcased it on a variety of algorithms and applications.
+\vspace{-8pt} %remove line break after itemize
+\end{itemize} 
 \\
 
 2014-2015 & {\textbf{Teaching Assistant}, \emph{Washington University in St. Louis}, St. Louis, MO, USA}. 
@@ -65,23 +74,17 @@ Summer 2015 & {\textbf{Software Engineer Intern}, \emph{Algorithmia}, Seattle, W
 
 Summer 2014 & {\textbf{Research Assistant}, \emph{Harvey Mudd College}, Claremont, CA, USA}.
 \newline
-Used techniques from machine learning and formal language theory to improve computer generation of original jazz solos.  Wrote up contributions as a Java implementation for Impro-Visor, an open-source software program for jazz improvisation, and a working paper, as well as a poster presented with the rest of the Impro-Visor team.  NSF REU program.\\
+Used techniques from machine learning and formal language theory to improve computer generation of original jazz solos.  Enabled the program to take greater advantage of harmonic and melodic structure in the solos it was trained on, but allowed the user to control the extent to which it did so.  Implemented work in Impro-Visor, an open-source Java program for jazz improvisation.  \\
 
 Summer 2013 & {\textbf{Research Assistant}, \emph{University of North Carolina at Greensboro}, Greensboro, NC, USA}. 
 \newline
-Proved previous conjectures and new results about subword complexity of partial words, a problem studied in mathematics and computer science with applications to fields such as computational biology.  Wrote up results in a working paper.  NSF REU Program.
+Proved previous conjectures and new results about subword complexity of partial words, a mathematics and computer science problem with applications to fields such as computational biology. 
 \\
 
 Summer 2012 & {\textbf{Student Intern}, \emph{Washington University School of Medicine}, St. Louis, MO, USA}.
 \newline
 Studied biostatistics at the introductory graduate level through the NHLBI's SIBS program and used R to apply these methods to biomedical datasets as part of an accompanying practicum.  
 \end{tabular}
-
-%TO BE FILLED IN UPON GETTING PUBLISHED
-%\section*{Papers}
-
-%TO BE FILLED IN UPON DOING PROFESSIONAL SERVICE
-%\section*{Service}
 
 \section*{Honors \& Awards}
 \begin{tabular}{L!{\VRule}R}
@@ -94,14 +97,8 @@ Studied biostatistics at the introductory graduate level through the NHLBI's SIB
 \\
 \end{tabular}
 
-
 \section*{Technical Skills}
-Reasonably proficient in: Java, Python.  \\
+Most proficient in: Python (including NumPy, SciPy, and scikit-learn for machine learning tasks), Java.  \\
 Moderate experience with: C++, R, MATLAB, Mathematica. \\
-Limited exposure to: SAS, STATA, SPSS.  Objective C, HTML, CSS.  
-
-%Not sure if this is relevant for a CV
-%\section*{Other Activities}
-
 
 \end{document}
